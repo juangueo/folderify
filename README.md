@@ -130,7 +130,7 @@ Arguments:
           - Use a solid black design over a transparent background.
           - Make sure the corner pixels of the mask image are transparent. They are used for empty margins.
           - Make sure the non-transparent pixels span a height of 384px, using a 16px grid.
-          If the height is 384px and the width is a multiple of 128px, each 64x64 tile will exactly align with 1 pixel at the smallest folder size.
+            If the height is 384px and the width is a multiple of 128px, each 64x64 tile will exactly align with 1 pixel at the smallest folder size.
 
   [TARGET]
           Target file or folder. If a target is specified, the resulting icon will
@@ -167,6 +167,9 @@ Options:
       --no-progress
           Don't show progress bars
 
+      --set-icon-using <SET_ICON_USING>
+          Method to set icon on folder (e.g. Rez)
+
       --badge <BADGE>
           Add a badge to the icon. Currently only supports one badge at a time
           
@@ -182,12 +185,10 @@ Options:
            folderify --completions fish | source # fish
            source <(folderify --completions zsh) # zsh
           
-          [possible values: bash, elvish, fish, powershell, zsh]
-
-  -h, --help
+      -h, --help
           Print help (see a summary with '-h')
 
-  -V, --version
+      -V, --version
           Print version
 ````
 
